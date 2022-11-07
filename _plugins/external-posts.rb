@@ -8,8 +8,8 @@ module ExternalPosts
     priority :high
 
     def generate(site)
-      if site.config['external_sources'] != nil
-        site.config['external_sources'].each do |src|
+      if site.config['external_sources'] == nil
+        site.config['external_sources'].each do |src|ß
           p "Fetching external posts from #{src['name']}:"
           xml = HTTParty.get(src['rss_url']).body
           feed = Feedjira.parse(xml)

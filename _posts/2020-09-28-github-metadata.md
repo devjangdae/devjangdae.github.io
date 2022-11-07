@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  a post with github metadata
+title:  깃허브 메타데이터가 있는 글
 date: 2020-09-28 21:01:00
 description: a quick run down on accessing github metadata.
 categories: sample-posts external-services
